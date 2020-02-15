@@ -30,5 +30,5 @@ here is the bitcoin address
   
 Thanks you so much.
 
-## Disclaimer:
+## Disclaimer
 **I don't Accept any responsibility for any illegal usage**
