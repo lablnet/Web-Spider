@@ -8,7 +8,8 @@ Multi threaded Web crawler written in Python
   ## Todo
   - [x] Gather Page links
   - [x] Multi Threaded
-  - [ ] Crawl Image
+  - [ ] Crawl Image with alt.
+  - [ ] Behchmarking.
   - [ ] Get Meta (Description, keywords)
   - [ ] Make Package flexible and easy to use without touching core file
   - [ ] Components to extend project
