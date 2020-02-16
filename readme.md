@@ -29,3 +29,6 @@ here is the bitcoin address
    ```37x6PA4qtPu2fQnYdW5U7jztYhbchASpBV```  
   
 Thanks you so much.
+
+## Disclaimer
+**I don't Accept any responsibility for any illegal usage**
