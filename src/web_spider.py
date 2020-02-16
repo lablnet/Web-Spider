@@ -8,6 +8,7 @@ __status__ = "Production"
 
 from urllib.request import urlopen
 from link_finder import LinkFinder
+from image_finder import ImageFinder
 from helper import *
 
 
