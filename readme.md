@@ -1,3 +1,4 @@
+
 [![lint_python](https://github.com/Lablnet/Web-Spider/workflows/lint_python/badge.svg)](https://github.com/Lablnet/Web-Spider/actions)
 
 # Overview
@@ -9,7 +10,10 @@ To run the crawler, please type `python3 index.py` and enter a URL to crawl.
 ## Original Author  
 1. [Muhammad Umer Farooq (Core)](https://github.com/Lablnet)  
   
-  ## Todo
+## Contributors
+1. [Christian Clauss](https://github.com/cclauss) 
+  
+## Todo
   - [x] Gather Page links
   - [x] Multi-threaded
   - [ ] Crawl images with alt.
