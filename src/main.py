@@ -12,11 +12,8 @@ from queue import Queue
 from .helper import *
 from .web_spider import WebSpider
 
-if os.getenv("GITHUB_ACTIONS"):
-    url = "Not_a_valid_URL"
-else:
-    url = input("Enter the url to crawl: ").strip() 
-
+# Disable processing if we are running in a GitHub Action
+url = "" if os.getenv("GITHUB_ACTIONS") else input("Enter the url to crawl: ").strip() 
 domain = get_domain_name(url)
 project_name = domain
 queue_file =  project_name + '/queue.txt'
@@ -60,5 +57,6 @@ def crawl():
 
 
 def main():
-    workers()
-    crawl()
+    if url:
+        workers()
+        crawl()
