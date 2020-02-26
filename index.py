@@ -1,7 +1,5 @@
-import sys
+#!/usr/bin/env python3
 
-# Set path to import
-sys.path.insert(1, './src')
-from src.main import *
+from src.main import main
 
 main()
