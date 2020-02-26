@@ -1,22 +1,31 @@
+
+[![lint_python](https://github.com/Lablnet/Web-Spider/workflows/lint_python/badge.svg)](https://github.com/Lablnet/Web-Spider/actions)
+
 # Overview
-Multi threaded Web crawler written in Python  
-***The purpose of this tool to gather the links `Only` for now.  You may look todo section***  
+A multi-threaded web crawler written in Python  
+***The purpose of this tool to gather the links `Only` for now.  You may look todo section***
+
+To run the crawler, please type `python3 index.py` and enter a URL to crawl.
   
 ## Original Author  
 1. [Muhammad Umer Farooq (Core)](https://github.com/Lablnet)  
   
-  ## Todo
+## Contributors
+1. [Christian Clauss](https://github.com/cclauss) 
+  
+## Todo
   - [x] Gather Page links
-  - [x] Multi Threaded
-  - [ ] Crawl Image with alt.
+  - [x] Multi-threaded
+  - [ ] Crawl images with alt.
   - [ ] Behchmarking.
-  - [ ] Get Meta (Description, keywords)
-  - [ ] Make Package flexible and easy to use without touching core file
+  - [ ] Get metadata (description, keywords)
+  - [ ] Make the package flexible and easy to use without touching any core files
   - [ ] Components to extend project
   - [ ] Database layer
   - [ ] Analytics
   - [ ] Data harvesting
   - [ ] Searching algorithms
+  - [ ] Add more tests
   
 ## Contributions  
 There is still a lot of work to do, so feel free to contribute to open `PR`  
@@ -34,4 +43,4 @@ here is the bitcoin address
 Thanks you so much.
 
 ## Disclaimer
-**I don't Accept any responsibility for any illegal usage**
+**I do not accept responsibility for any illegal usage**
