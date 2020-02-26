@@ -9,8 +9,8 @@ __status__ = "Production"
 import os
 import threading
 from queue import Queue
-from web_spider import WebSpider
 from .helper import *
+from .web_spider import WebSpider
 
 if os.getenv("GITHUB_ACTIONS"):
     url = "https://github.com"
