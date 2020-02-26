@@ -39,4 +39,4 @@ here is the bitcoin address
 Thanks you so much.
 
 ## Disclaimer
-**I do not accept any responsibility for illegal usage**
+**I do not accept responsibility for any illegal usage**
