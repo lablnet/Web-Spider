@@ -2,6 +2,7 @@ import sys
 
 # Set path to import
 sys.path.insert(1, './src')
-from main import *
+from src.main import main
 
-main()
+if __name__ == "__main__":
+    main()
