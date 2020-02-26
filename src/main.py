@@ -6,13 +6,14 @@ __maintainer__ = "Muhammad Umer Farooq"
 __email__ = "contact@muhammadumerfarooq.me"
 __status__ = "Production"
 
+import os
 import threading
 from queue import Queue
-from web_spider import WebSpider
-from helper import *
+from .helper import *
+from .web_spider import WebSpider
 
-url = str(input("Enter the url to crawl: "))
-
+# Disable processing if we are running in a GitHub Action
+url = "" if os.getenv("GITHUB_ACTIONS") else input("Enter the url to crawl: ").strip() 
 domain = get_domain_name(url)
 project_name = domain
 queue_file =  project_name + '/queue.txt'
@@ -20,7 +21,8 @@ crawled_file = project_name + '/crawled.txt'
 No_of_thread = 4
 
 queue = Queue()
-WebSpider(project_name, url, domain)
+if url:
+    WebSpider(project_name, url, domain)
 
 
 # Create worker.
@@ -56,5 +58,6 @@ def crawl():
 
 
 def main():
-    workers()
-    crawl()
+    if url:
+        workers()
+        crawl()

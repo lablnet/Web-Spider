@@ -7,9 +7,9 @@ __email__ = "contact@muhammadumerfarooq.me"
 __status__ = "Production"
 
 from urllib.request import urlopen
-from link_finder import LinkFinder
-from image_finder import ImageFinder
-from helper import *
+from .helper import *
+from .image_finder import ImageFinder
+from .link_finder import LinkFinder
 
 
 class WebSpider:
