@@ -21,7 +21,8 @@ crawled_file = project_name + '/crawled.txt'
 No_of_thread = 4
 
 queue = Queue()
-WebSpider(project_name, url, domain)
+if url:
+    WebSpider(project_name, url, domain)
 
 
 # Create worker.
