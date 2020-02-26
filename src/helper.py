@@ -63,6 +63,12 @@ def set_to_file(s, file):
 
 # Get main domain name (example.com)
 def get_domain_name(url):
+    """
+    get_sub_domain_name("https://a.b.c.d/e/f?g=h,i=j#k")
+    'c.d'
+    get_sub_domain_name("Not a URL!)
+    ''
+    """
     try:
         u = get_sub_domain_name(url).split('.')
         return u[-2] + '.' + u[-1]
@@ -72,6 +78,12 @@ def get_domain_name(url):
 
 # Get sub domain name (sub.example.com)
 def get_sub_domain_name(url):
+    """
+    get_sub_domain_name("https://a.b.c.d/e/f?g=h,i=j#k")
+    'a.b.c.d'
+    get_sub_domain_name("Not a URL!)
+    ''
+    """
     try:
         return urlparse(url).netloc
     except:
