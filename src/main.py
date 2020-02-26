@@ -10,7 +10,7 @@ import os
 import threading
 from queue import Queue
 from web_spider import WebSpider
-from helper import *
+from .helper import *
 
 if os.getenv("GITHUB_ACTIONS"):
     url = "https://github.com"
