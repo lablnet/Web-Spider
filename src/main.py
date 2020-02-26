@@ -6,12 +6,16 @@ __maintainer__ = "Muhammad Umer Farooq"
 __email__ = "contact@muhammadumerfarooq.me"
 __status__ = "Production"
 
+import os
 import threading
 from queue import Queue
 from web_spider import WebSpider
 from helper import *
 
-url = str(input("Enter the url to crawl: "))
+if os.getenv("GITHUB_ACTIONS"):
+    url = "https://github.com"
+else:
+    url = input("Enter the url to crawl: ").strip() 
 
 domain = get_domain_name(url)
 project_name = domain
