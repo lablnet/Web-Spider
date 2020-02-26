@@ -16,4 +16,4 @@ jobs:
       - run: isort --recursive . || true
       - run: pip install requests -r requirements.txt || true
       - run: pytest . || true
-      - run: pytest --doctest-modules .
+      - run: pytest --doctest-modules ./src
