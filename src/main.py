@@ -13,7 +13,7 @@ from .helper import *
 from .web_spider import WebSpider
 
 if os.getenv("GITHUB_ACTIONS"):
-    url = "https://github.com"
+    url = "Not a valid URL."
 else:
     url = input("Enter the url to crawl: ").strip() 
 
