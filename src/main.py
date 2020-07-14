@@ -6,6 +6,7 @@ __maintainer__ = "Muhammad Umer Farooq"
 __email__ = "contact@muhammadumerfarooq.me"
 __status__ = "Production"
 
+from .__config import get_config
 import os
 import threading
 from queue import Queue
@@ -13,12 +14,16 @@ from .helper import *
 from .web_spider import WebSpider
 
 # Disable processing if we are running in a GitHub Action
-url = "" if os.getenv("GITHUB_ACTIONS") else input("Enter the url to crawl: ") 
+url = "" if os.getenv("GITHUB_ACTIONS") else input("Enter the url to crawl: ")
 domain = get_domain_name(url)
 project_name = domain
-queue_file =  project_name + '/queue.txt'
+queue_file = project_name + '/queue.txt'
 crawled_file = project_name + '/crawled.txt'
-No_of_thread = 4
+
+# get config
+No_of_thread = get_config('threads')
+if None is No_of_thread:
+    No_of_thread = 4
 
 queue = Queue()
 if url:
@@ -35,10 +40,11 @@ def workers():
 
 # Do the next job in queues.s
 def work():
-    while True :
+    while True:
         url = queue.get()
         WebSpider.crawlPage(threading.current_thread().name, url)
         queue.task_done()
+
 
 # Lets do the job.
 def jobs():
@@ -47,6 +53,7 @@ def jobs():
 
     queue.join()
     crawl()
+
 
 # If anything left in queue, so crawl then.
 def crawl():
