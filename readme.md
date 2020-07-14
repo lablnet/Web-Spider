@@ -17,6 +17,7 @@ To run the crawler, please type `python3 index.py` and enter a URL to crawl.
 ## Todo
   - [x] Gather Page links
   - [x] Multi-threaded
+  - [X] Added Configuration support.
   - [ ] Crawl images with alt.
   - [ ] Behchmarking.
   - [ ] Get metadata (description, keywords)
