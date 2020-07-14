@@ -1,3 +1,4 @@
+[![Run on Repl.it](https://repl.it/badge/github/Lablnet/Web-Spider)](https://repl.it/github/Lablnet/Web-Spider)
 
 [![lint_python](https://github.com/Lablnet/Web-Spider/workflows/lint_python/badge.svg)](https://github.com/Lablnet/Web-Spider/actions)
 
