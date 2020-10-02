@@ -21,7 +21,7 @@ class _sqlite:
         '''
         Establishes Connection with class and Database
         Args:
-            Cinfiguration of database
+            Configuration of database
         Returns:
             class
         Raises:
